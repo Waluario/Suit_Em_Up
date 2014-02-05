@@ -17,10 +17,10 @@ public:
 	void SetTexture(const sf::Texture& p_xTex);
 	const sf::Texture *GetTexture() const;
 
-	void SetSprite();
+	void SetSprite(sf::Sprite p_xSprite);
 	const sf::Sprite GetSprite();
 
-	void Draw(sf::RenderTarget& m_xTarget, sf::RenderStates m_xStates) const;
+	void draw(sf::RenderTarget& m_xTarget, sf::RenderStates m_xStates) const;
 
 protected:
 	std::string m_sName;

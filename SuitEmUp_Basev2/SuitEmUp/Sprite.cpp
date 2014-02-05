@@ -26,15 +26,15 @@ const sf::Texture* Sprite::GetTexture() const {
 	return m_xSprite.getTexture();
 }
 
-void Sprite::SetSprite(){
-
+void Sprite::SetSprite(sf::Sprite p_xSprite){
+	m_xSprite = p_xSprite;
 }
 
 const sf::Sprite Sprite::GetSprite(){
 	return m_xSprite;
 }
 
-void Sprite::Draw(sf::RenderTarget& m_xTarget, sf::RenderStates m_xStates) const {
-	m_xStates.transform *= getTransform();
-	m_xTarget.draw(m_xSprite, m_xStates);
+void Sprite::draw(sf::RenderTarget& p_xTarget, sf::RenderStates p_xStates) const {
+	p_xStates.transform *= getTransform();
+	p_xTarget.draw(m_xSprite, p_xStates);
 }

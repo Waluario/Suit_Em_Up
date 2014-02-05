@@ -14,6 +14,6 @@ void PlayerObject::UpdateCurrent(sf::Time p_xDtime){
 	setVelocity(l_xVel * (float)p_xDtime.asMicroseconds());
 }
 
-void PlayerObject::DrawCurrent(sf::RenderTarget& p_xTarget, sf::RenderStates p_xStates) const {
+void PlayerObject::DrawCurrent(sf::RenderWindow p_xWindow) const {
 	p_xTarget.draw(m_xpSprite->GetTexture(), p_xStates);
 }

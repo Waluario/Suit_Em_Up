@@ -30,7 +30,7 @@ bool Gamestate::Update(sf::Time p_xDtime){
 }
 
 void Gamestate::Draw(){
-	m_xpPlayer->draw(m_xpWindow, );
+	m_xpPlayer->draw(m_xpWindow);
 
 	// Add the background sprite to the scene
 	/*std::unique_ptr<Ground> backgroundSprite(new Ground(mTextures, mWindow.getSize()));
